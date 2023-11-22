@@ -1,0 +1,235 @@
+html{
+    font-size: 1vw;
+    cursor: none;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0 0;
+    height: 100%;
+}
+
+.cursor {
+/*
+	position: fixed;
+    transform: translate(-50%, -50%);
+*/ position: absolute;
+    background-color: orange;
+	width: 30px; 
+	height: 30px; 
+    border-radius: 50%; 
+    mix-blend-mode: multiply;
+    z-index: 1001;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    transition: all 0.3s ease;
+    transition-property: background, transform, border; 
+}
+
+.btn-hover{
+    transform: scale(2) translate(-25%, -25%);
+    transform-origin: center;
+    background-color: white;
+    border: 1px solid orange;
+}
+
+
+
+.enlarged{
+   transform: scale(4);
+    transform-origin: center;
+}
+
+.image-enlarged{
+    transform: scale(10);
+    transform-origin: center;
+}
+
+.tdv{
+    position: fixed;
+    margin-top: 4vw;
+    margin-left: 18vw;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    color: orange;
+    z-index: 2;
+}
+
+.faculty-portal{
+    position: fixed;
+    margin-left: 3.5%;
+    margin-top: 25vw;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    color: orange;
+    transform-origin: bottom;
+    transform: rotate(90deg);
+    z-index: 2;
+    
+    
+}
+
+.alt-nav-btn{
+    position: fixed;
+    margin-top: 4vw;
+    margin-left: 7%;
+    border-radius: 50%;
+    background-color: white 0;
+    border: solid orange;
+    border-width: 1px;
+    width: 2vw;
+    height: 2vw;
+    z-index: 100;
+}
+
+.alt-nav-btn:hover{
+    background-color: orange;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.alt-nav{
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    background-color: #302A77;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+.alt-nav-content{
+    top: 25%;
+    width: 100%;
+    text-align: left;
+    margin-top: 10vw;
+    margin-left: 5vw;
+}
+
+.alt-nav-text{
+    font-size: 0.5em; 
+    color: white;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    display: none;
+    padding-left: 8px;
+}
+
+.alt-nav a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 3em;
+    color: orange;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    transition: 0.1s;
+    cursor: none;
+    
+}
+
+
+.alt-nav a:hover .alt-nav-text{
+    display: inline-block;
+}
+
+
+
+.alt-nav .closebtn{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.pitv-circle{
+    position: fixed;
+    width: 10vw;
+    height: 10vw;
+    bottom: 4vw;
+    right: 10vw;
+    z-index: 2;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+     scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display:none;
+}
+
+
+
+.wrapper{
+          
+    display: flex;
+    flex-direction: row;
+    width: 500vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+
+
+.flex-tale{
+    margin: 0 0 !important;
+    width: 100vw;
+    object-fit: cover;
+    height: 100vh;
+    z-index: 1;
+   
+    
+}
+
+.navigation:hover{
+    cursor: none;
+}
+.navigation:hover ~ .change{
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.navigation1:hover{
+    cursor: none;
+}
+.navigation1:hover ~ .change1{
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.navigation2:hover{
+    cursor: none;
+}
+.navigation2:hover ~ .change2{
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.info{
+    position: fixed;
+    bottom: 10%;
+    left: 7%;
+    background-color: white;
+    border: 2px solid #302A77;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+
+
